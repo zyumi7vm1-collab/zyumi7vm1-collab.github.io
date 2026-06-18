@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Privacy Policy for TONG ZONG.">
+  <title>TONG ZONG | Privacy Policy</title>
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&f[]=zodiak@400,700&display=swap" rel="stylesheet">
+  <style>
+    :root, [data-theme="light"] {
+      --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+      --text-sm: clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
+      --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+      --text-lg: clamp(1.125rem, 1rem + 0.75vw, 1.5rem);
+      --text-xl: clamp(1.5rem, 1.2rem + 1.25vw, 2.25rem);
+      --text-2xl: clamp(2rem, 1.2rem + 2.5vw, 3.5rem);
+      --space-2: 0.5rem;
+      --space-3: 0.75rem;
+      --space-4: 1rem;
+      --space-5: 1.25rem;
+      --space-6: 1.5rem;
+      --space-8: 2rem;
+      --space-10: 2.5rem;
+      --space-12: 3rem;
+      --space-16: 4rem;
+      --color-bg: #f7f6f2;
+      --color-surface: #f9f8f5;
+      --color-surface-2: #fbfbf9;
+      --color-text: #28251d;
+      --color-text-muted: #6f6b62;
+      --color-text-inverse: #f9f8f4;
+      --color-primary: #0f5f67;
+      --color-primary-hover: #0b4d53;
+      --color-border: #d4d1ca;
+      --radius-md: 0.75rem;
+      --radius-lg: 1rem;
+      --radius-full: 9999px;
+      --shadow-sm: 0 1px 2px rgba(31, 27, 20, 0.06);
+      --shadow-md: 0 10px 24px rgba(31, 27, 20, 0.08);
+      --transition-interactive: 180ms cubic-bezier(0.16, 1, 0.3, 1);
+      --font-display: 'Zodiak', Georgia, serif;
+      --font-body: 'General Sans', 'Helvetica Neue', sans-serif;
+      --content-narrow: 840px;
+    }
+    [data-theme="dark"] {
+      --color-bg: #171614;
+      --color-surface: #1c1b19;
+      --color-surface-2: #201f1d;
+      --color-text: #e1ddd5;
+      --color-text-muted: #b1aba0;
+      --color-text-inverse: #161513;
+      --color-primary: #67a5ad;
+      --color-primary-hover: #89bcc2;
+      --color-border: #3b3935;
+      --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.2);
+      --shadow-md: 0 10px 24px rgba(0, 0, 0, 0.28);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      min-height: 100vh;
+      font-family: var(--font-body);
+      font-size: var(--text-base);
+      line-height: 1.7;
+      color: var(--color-text);
+      background: var(--color-bg);
+    }
+    a, button {
+      color: inherit;
+      transition: color var(--transition-interactive), background var(--transition-interactive), border-color var(--transition-interactive);
+    }
+    button { font: inherit; border: 0; background: none; cursor: pointer; }
+    .container {
+      width: min(calc(100% - 2rem), var(--content-narrow));
+      margin: 0 auto;
+    }
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 30;
+      background: color-mix(in srgb, var(--color-bg) 84%, transparent);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid color-mix(in srgb, var(--color-text) 12%, transparent);
+    }
+    .header-inner {
+      min-height: 4.75rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-4);
+    }
+    .brand,
+    .actions {
+      display: flex;
+      align-items: center;
+      gap: var(--space-3);
+      flex-wrap: wrap;
+    }
+    .brand {
+      text-decoration: none;
+      font-size: var(--text-sm);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-weight: 600;
+    }
+    .brand-mark {
+      width: 2.5rem;
+      height: 2.5rem;
+      padding: 0.35rem;
+      border-radius: 50%;
+      border: 1px solid color-mix(in srgb, var(--color-text) 15%, transparent);
+      background: var(--color-surface-2);
+      box-shadow: var(--shadow-sm);
+    }
+    .back-link,
+    .theme-toggle {
+      min-height: 44px;
+      padding: 0.7rem 1rem;
+      border-radius: var(--radius-full);
+      border: 1px solid color-mix(in srgb, var(--color-text) 10%, transparent);
+      background: var(--color-surface);
+      text-decoration: none;
+      font-size: var(--text-sm);
+    }
+    .back-link:hover,
+    .theme-toggle:hover {
+      border-color: color-mix(in srgb, var(--color-primary) 35%, transparent);
+      color: var(--color-primary);
+    }
+    main { padding: clamp(var(--space-12), 10vw, var(--space-16)) 0; }
+    .policy-wrap {
+      padding: var(--space-8);
+      border-radius: var(--radius-lg);
+      background: var(--color-surface);
+      border: 1px solid color-mix(in srgb, var(--color-text) 10%, transparent);
+      box-shadow: var(--shadow-md);
+    }
+    h1, h2 { font-family: var(--font-display); line-height: 1.1; }
+    h1 { font-size: clamp(2.5rem, 7vw, 4.5rem); margin-bottom: var(--space-4); }
+    h2 { font-size: var(--text-xl); margin-top: var(--space-8); margin-bottom: var(--space-3); }
+    p { color: var(--color-text-muted); max-width: 68ch; }
+    p + p { margin-top: var(--space-4); }
+    .intro { margin-bottom: var(--space-6); }
+    .contact-box {
+      margin-top: var(--space-8);
+      padding: var(--space-5);
+      border-radius: var(--radius-md);
+      background: var(--color-surface-2);
+      border: 1px solid color-mix(in srgb, var(--color-text) 8%, transparent);
+    }
+    .contact-box strong { color: var(--color-text); }
+    .contact-box a { color: var(--color-primary); font-weight: 600; text-decoration: none; }
+    .contact-box a:hover { color: var(--color-primary-hover); }
+    @media (max-width: 720px) {
+      .header-inner { padding-block: var(--space-3); align-items: flex-start; flex-direction: column; }
+      .policy-wrap { padding: var(--space-5); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="./tong-zong.html" aria-label="Back to TONG ZONG homepage">
+        <svg class="brand-mark" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+          <circle cx="32" cy="32" r="25" stroke="currentColor" stroke-width="3"></circle>
+          <path d="M18 23H46" stroke="currentColor" stroke-width="3" stroke-linecap="round"></path>
+          <path d="M32 23V46" stroke="currentColor" stroke-width="3" stroke-linecap="round"></path>
+          <path d="M22 41C25 36.5 29 34 32 34C35 34 39 36.5 42 41" stroke="currentColor" stroke-width="3" stroke-linecap="round"></path>
+        </svg>
+        <span>TONG ZONG</span>
+      </a>
+      <div class="actions">
+        <a class="back-link" href="./tong-zong.html">Home</a>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch color mode">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container policy-wrap">
+      <p class="intro">Effective date: June 16, 2026</p>
+      <h1>Privacy Policy</h1>
+      <p>TONG ZONG values the privacy of visitors and clients. This Privacy Policy explains how information may be collected, used, and protected when someone contacts the business or interacts with the website.</p>
+
+      <h2>Information collected</h2>
+      <p>The website may collect personal information that visitors provide voluntarily, including name, phone number, email address, and message details submitted through direct contact. Basic technical information such as browser type, device information, and general usage data may also be collected to support website functionality and security.</p>
+
+      <h2>How information is used</h2>
+      <p>Information may be used to respond to inquiries, provide requested services, improve communication, maintain business records, and support normal business operations. TONG ZONG does not sell personal information to third parties.</p>
+
+      <h2>Data protection</h2>
+      <p>Reasonable administrative and technical measures are used to protect submitted information. Even so, no website or communication method can guarantee complete security, so visitors should avoid sending highly sensitive information through standard contact channels.</p>
+
+      <h2>Third-party services</h2>
+      <p>The website may rely on third-party hosting, font delivery, or analytics-related tools that process limited technical data as part of website delivery. Those providers may have their own privacy practices.</p>
+
+      <h2>Contact about privacy</h2>
+      <p>Questions related to privacy, personal information, or data requests can be directed to the business using the contact information below.</p>
+
+      <div class="contact-box">
+        <p><strong>TONG ZONG</strong></p>
+        <p>12704 22ND AVE<br>COLLEGE POINT NY 11356</p>
+        <p><a href="tel:+19294024302">+1 929 402 4302</a></p>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    (function() {
+      const root = document.documentElement;
+      const toggle = document.querySelector('[data-theme-toggle]');
+      let theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      root.setAttribute('data-theme', theme);
+
+      const updateIcon = () => {
+        toggle.innerHTML = theme === 'dark'
+          ? '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="5"></circle><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path></svg>'
+          : '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>';
+        toggle.setAttribute('aria-label', theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+      };
+
+      updateIcon();
+      toggle.addEventListener('click', function() {
+        theme = theme === 'dark' ? 'light' : 'dark';
+        root.setAttribute('data-theme', theme);
+        updateIcon();
+      });
+    })();
+  </script>
+</body>
+</html>

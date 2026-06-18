@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TONG ZONG offers dependable business support, service coordination, and client communication with clear pricing and direct contact information.">
+  <title>TONG ZONG</title>
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&f[]=zodiak@400,700&display=swap" rel="stylesheet">
+  <style>
+    :root, [data-theme="light"] {
+      --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+      --text-sm: clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
+      --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+      --text-lg: clamp(1.125rem, 1rem + 0.75vw, 1.5rem);
+      --text-xl: clamp(1.5rem, 1.2rem + 1.25vw, 2.25rem);
+      --text-2xl: clamp(2rem, 1.2rem + 2.5vw, 3.5rem);
+      --text-3xl: clamp(2.5rem, 1rem + 4vw, 5rem);
+      --space-1: 0.25rem;
+      --space-2: 0.5rem;
+      --space-3: 0.75rem;
+      --space-4: 1rem;
+      --space-5: 1.25rem;
+      --space-6: 1.5rem;
+      --space-8: 2rem;
+      --space-10: 2.5rem;
+      --space-12: 3rem;
+      --space-16: 4rem;
+      --space-20: 5rem;
+      --space-24: 6rem;
+      --space-32: 8rem;
+      --color-bg: #f7f6f2;
+      --color-surface: #f9f8f5;
+      --color-surface-2: #fbfbf9;
+      --color-surface-offset: #edeae5;
+      --color-border: #d4d1ca;
+      --color-text: #28251d;
+      --color-text-muted: #6f6b62;
+      --color-text-faint: #9c988f;
+      --color-text-inverse: #f9f8f4;
+      --color-primary: #0f5f67;
+      --color-primary-hover: #0b4d53;
+      --color-primary-highlight: #d8e4e2;
+      --radius-sm: 0.375rem;
+      --radius-md: 0.75rem;
+      --radius-lg: 1rem;
+      --radius-xl: 1.5rem;
+      --radius-full: 9999px;
+      --shadow-sm: 0 1px 2px rgba(31, 27, 20, 0.06);
+      --shadow-md: 0 10px 24px rgba(31, 27, 20, 0.08);
+      --shadow-lg: 0 22px 50px rgba(31, 27, 20, 0.12);
+      --transition-interactive: 180ms cubic-bezier(0.16, 1, 0.3, 1);
+      --content-default: 1120px;
+      --font-display: 'Zodiak', Georgia, serif;
+      --font-body: 'General Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    [data-theme="dark"] {
+      --color-bg: #171614;
+      --color-surface: #1c1b19;
+      --color-surface-2: #201f1d;
+      --color-surface-offset: #252320;
+      --color-border: #3b3935;
+      --color-text: #e1ddd5;
+      --color-text-muted: #b1aba0;
+      --color-text-faint: #7c766d;
+      --color-text-inverse: #161513;
+      --color-primary: #67a5ad;
+      --color-primary-hover: #89bcc2;
+      --color-primary-highlight: #293537;
+      --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.2);
+      --shadow-md: 0 10px 24px rgba(0, 0, 0, 0.28);
+      --shadow-lg: 0 22px 50px rgba(0, 0, 0, 0.38);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme]) {
+        --color-bg: #171614;
+        --color-surface: #1c1b19;
+        --color-surface-2: #201f1d;
+        --color-surface-offset: #252320;
+        --color-border: #3b3935;
+        --color-text: #e1ddd5;
+        --color-text-muted: #b1aba0;
+        --color-text-faint: #7c766d;
+        --color-text-inverse: #161513;
+        --color-primary: #67a5ad;
+        --color-primary-hover: #89bcc2;
+        --color-primary-highlight: #293537;
+      }
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html {
+      scroll-behavior: smooth;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-size-adjust: none;
+      scroll-padding-top: 5rem;
+    }
+    body {
+      min-height: 100vh;
+      font-family: var(--font-body);
+      font-size: var(--text-base);
+      line-height: 1.65;
+      color: var(--color-text);
+      background:
+        radial-gradient(circle at top left, color-mix(in srgb, var(--color-primary) 10%, transparent), transparent 34%),
+        linear-gradient(180deg, color-mix(in srgb, var(--color-surface) 92%, transparent), var(--color-bg));
+      background-color: var(--color-bg);
+    }
+    img, svg { display: block; max-width: 100%; }
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color var(--transition-interactive), background var(--transition-interactive), border-color var(--transition-interactive), transform var(--transition-interactive);
+    }
+    button {
+      font: inherit;
+      color: inherit;
+      border: 0;
+      background: none;
+      cursor: pointer;
+      transition: color var(--transition-interactive), background var(--transition-interactive), border-color var(--transition-interactive), transform var(--transition-interactive);
+    }
+    :focus-visible {
+      outline: 2px solid var(--color-primary);
+      outline-offset: 3px;
+      border-radius: var(--radius-sm);
+    }
+    .skip-link {
+      position: absolute;
+      left: var(--space-4);
+      top: -3rem;
+      padding: var(--space-3) var(--space-4);
+      border-radius: var(--radius-full);
+      background: var(--color-primary);
+      color: var(--color-text-inverse);
+      z-index: 100;
+    }
+    .skip-link:focus { top: var(--space-4); }
+    .container {
+      width: min(calc(100% - 2rem), var(--content-default));
+      margin: 0 auto;
+    }
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 30;
+      backdrop-filter: blur(16px);
+      background: color-mix(in srgb, var(--color-bg) 82%, transparent);
+      border-bottom: 1px solid color-mix(in srgb, var(--color-text) 12%, transparent);
+    }
+    .header-inner {
+      min-height: 4.75rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-4);
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-3);
+      font-size: var(--text-sm);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+    .brand-mark {
+      width: 2.5rem;
+      height: 2.5rem;
+      padding: 0.35rem;
+      border-radius: 50%;
+      border: 1px solid color-mix(in srgb, var(--color-text) 15%, transparent);
+      background: var(--color-surface-2);
+      box-shadow: var(--shadow-sm);
+    }
+    .main-nav {
+      display: flex;
+      align-items: center;
+      gap: var(--space-2);
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+    .main-nav a,
+    .theme-toggle {
+      min-height: 44px;
+      padding: 0.7rem 1rem;
+      border-radius: var(--radius-full);
+      color: var(--color-text-muted);
+      font-size: var(--text-sm);
+    }
+    .main-nav a:hover,
+    .main-nav a.active,
+    .theme-toggle:hover {
+      color: var(--color-text);
+      background: color-mix(in srgb, var(--color-primary) 10%, var(--color-surface));
+    }
+    .hero {
+      padding: clamp(var(--space-16), 14vw, var(--space-32)) 0 var(--space-16);
+    }
+    .hero-grid {
+      display: grid;
+      gap: var(--space-8);
+      align-items: end;
+    }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-2);
+      padding: 0.45rem 0.8rem;
+      border-radius: var(--radius-full);
+      background: color-mix(in srgb, var(--color-primary) 9%, var(--color-surface));
+      color: var(--color-primary);
+      font-size: var(--text-xs);
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+    h1, h2, h3 { font-family: var(--font-display); line-height: 1.08; }
+    h1 {
+      margin-top: var(--space-5);
+      max-width: 10ch;
+      font-size: clamp(3rem, 8vw, 6.5rem);
+      letter-spacing: -0.03em;
+    }
+    .hero-copy p {
+      margin-top: var(--space-5);
+      max-width: 58ch;
+      color: var(--color-text-muted);
+    }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-3);
+      margin-top: var(--space-6);
+    }
+    .btn {
+      min-height: 46px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.85rem 1.25rem;
+      border-radius: var(--radius-full);
+      border: 1px solid transparent;
+      font-size: var(--text-sm);
+      font-weight: 600;
+    }
+    .btn-primary {
+      background: var(--color-primary);
+      color: var(--color-text-inverse);
+      box-shadow: var(--shadow-md);
+    }
+    .btn-primary:hover { background: var(--color-primary-hover); transform: translateY(-1px); }
+    .btn-secondary {
+      border-color: color-mix(in srgb, var(--color-text) 12%, transparent);
+      background: var(--color-surface);
+    }
+    .btn-secondary:hover {
+      border-color: color-mix(in srgb, var(--color-primary) 35%, transparent);
+      background: color-mix(in srgb, var(--color-primary) 7%, var(--color-surface));
+    }
+    .hero-card {
+      padding: var(--space-8);
+      border-radius: var(--radius-xl);
+      background: linear-gradient(180deg, color-mix(in srgb, var(--color-surface-2) 88%, transparent), var(--color-surface));
+      border: 1px solid color-mix(in srgb, var(--color-text) 12%, transparent);
+      box-shadow: var(--shadow-lg);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-card::after {
+      content: "";
+      position: absolute;
+      inset: auto -3rem -3rem auto;
+      width: 12rem;
+      height: 12rem;
+      border-radius: 50%;
+      background: color-mix(in srgb, var(--color-primary) 14%, transparent);
+      filter: blur(12px);
+    }
+    .metric {
+      display: flex;
+      align-items: baseline;
+      gap: var(--space-3);
+      margin-bottom: var(--space-4);
+    }
+    .metric strong {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 6vw, 4rem);
+      line-height: 1;
+    }
+    .section {
+      padding: clamp(var(--space-12), 10vw, var(--space-24)) 0;
+    }
+    .section-head {
+      display: grid;
+      gap: var(--space-4);
+      margin-bottom: var(--space-8);
+    }
+    .section-head p {
+      max-width: 60ch;
+      color: var(--color-text-muted);
+    }
+    .services-grid,
+    .pricing-grid,
+    .contact-grid {
+      display: grid;
+      gap: var(--space-5);
+    }
+    .card {
+      padding: var(--space-6);
+      border-radius: var(--radius-lg);
+      background: var(--color-surface);
+      border: 1px solid color-mix(in srgb, var(--color-text) 10%, transparent);
+      box-shadow: var(--shadow-sm);
+      content-visibility: auto;
+    }
+    .card p,
+    .price-card p,
+    .contact-card p {
+      margin-top: var(--space-3);
+      color: var(--color-text-muted);
+    }
+    .card-number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 2.2rem;
+      height: 2.2rem;
+      margin-bottom: var(--space-4);
+      border-radius: 50%;
+      background: color-mix(in srgb, var(--color-primary) 10%, var(--color-surface));
+      color: var(--color-primary);
+      font-size: var(--text-xs);
+      font-weight: 700;
+      letter-spacing: 0.08em;
+    }
+    .spotlight {
+      display: grid;
+      gap: var(--space-6);
+      padding: var(--space-8);
+      border-radius: calc(var(--radius-xl) + 0.25rem);
+      background: linear-gradient(135deg, color-mix(in srgb, var(--color-primary) 11%, var(--color-surface-2)), var(--color-surface));
+      border: 1px solid color-mix(in srgb, var(--color-primary) 18%, transparent);
+    }
+    .checklist {
+      list-style: none;
+      display: grid;
+      gap: var(--space-3);
+      color: var(--color-text-muted);
+    }
+    .checklist li {
+      padding-left: 1.5rem;
+      position: relative;
+    }
+    .checklist li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.7rem;
+      width: 0.55rem;
+      height: 0.55rem;
+      border-radius: 50%;
+      background: var(--color-primary);
+    }
+    .pricing-grid {
+      align-items: stretch;
+    }
+    .price-card {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-4);
+      padding: var(--space-6);
+      border-radius: var(--radius-lg);
+      background: var(--color-surface);
+      border: 1px solid color-mix(in srgb, var(--color-text) 10%, transparent);
+      box-shadow: var(--shadow-sm);
+    }
+    .price-card.featured {
+      background: linear-gradient(180deg, color-mix(in srgb, var(--color-primary) 10%, var(--color-surface-2)), var(--color-surface));
+      border-color: color-mix(in srgb, var(--color-primary) 28%, transparent);
+      box-shadow: var(--shadow-md);
+    }
+    .price-tag {
+      display: flex;
+      align-items: end;
+      gap: var(--space-2);
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 5vw, 3.75rem);
+      line-height: 1;
+    }
+    .price-tag span {
+      font-family: var(--font-body);
+      font-size: var(--text-sm);
+      color: var(--color-text-muted);
+      margin-bottom: 0.45rem;
+    }
+    .price-features {
+      list-style: none;
+      display: grid;
+      gap: var(--space-3);
+      color: var(--color-text-muted);
+    }
+    .price-features li {
+      padding-bottom: var(--space-3);
+      border-bottom: 1px solid color-mix(in srgb, var(--color-text) 8%, transparent);
+    }
+    .contact-card {
+      padding: var(--space-6);
+      border-radius: var(--radius-lg);
+      background: var(--color-surface);
+      border: 1px solid color-mix(in srgb, var(--color-text) 10%, transparent);
+    }
+    .contact-card a {
+      color: var(--color-primary);
+      font-weight: 600;
+    }
+    .contact-card a:hover { color: var(--color-primary-hover); }
+    .footer {
+      padding: var(--space-8) 0 var(--space-10);
+      border-top: 1px solid color-mix(in srgb, var(--color-text) 10%, transparent);
+      color: var(--color-text-muted);
+    }
+    .footer-inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: var(--space-4);
+    }
+
+    @media (min-width: 860px) {
+      .hero-grid {
+        grid-template-columns: 1.15fr 0.85fr;
+      }
+      .services-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+      .pricing-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+      .contact-grid {
+        grid-template-columns: 1.05fr 0.95fr;
+      }
+      .spotlight {
+        grid-template-columns: 1fr 0.9fr;
+        align-items: start;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .header-inner {
+        padding-block: var(--space-3);
+        align-items: flex-start;
+        flex-direction: column;
+      }
+      .main-nav {
+        width: 100%;
+        justify-content: flex-start;
+      }
+      .hero-card,
+      .spotlight,
+      .card,
+      .price-card,
+      .contact-card {
+        padding: var(--space-5);
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="TONG ZONG home">
+        <svg class="brand-mark" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+          <circle cx="32" cy="32" r="25" stroke="currentColor" stroke-width="3"></circle>
+          <path d="M18 23H46" stroke="currentColor" stroke-width="3" stroke-linecap="round"></path>
+          <path d="M32 23V46" stroke="currentColor" stroke-width="3" stroke-linecap="round"></path>
+          <path d="M22 41C25 36.5 29 34 32 34C35 34 39 36.5 42 41" stroke="currentColor" stroke-width="3" stroke-linecap="round"></path>
+        </svg>
+        <span>TONG ZONG</span>
+      </a>
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+        <a href="./privacy.html">Privacy</a>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch color mode">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">Client-ready business website</div>
+          <h1>Clear business support for clients who value speed and trust.</h1>
+          <p>TONG ZONG presents your business with a polished digital front door, practical service information, direct contact details, and straightforward pricing so customers can reach you with confidence.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">Contact TONG ZONG</a>
+            <a class="btn btn-secondary" href="#pricing">View pricing</a>
+          </div>
+        </div>
+        <aside class="hero-card" aria-label="Business snapshot">
+          <div class="metric"><strong>24/7</strong><span>Availability for incoming inquiries and customer follow-up.</span></div>
+          <div class="metric"><strong>3</strong><span>Service tiers designed for small, growing, and custom business needs.</span></div>
+          <p>This homepage draws inspiration from a clean SaaS style with strong sections, clear pricing, and direct conversion paths, adapted into a more grounded business identity for TONG ZONG.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Services</div>
+          <h2>Built to support daily business operations.</h2>
+          <p>Use this structure to present your company as organized, responsive, and easy to work with. The content balances professionalism, clarity, and accessibility for new clients.</p>
+        </div>
+        <div class="services-grid">
+          <article class="card">
+            <div class="card-number">01</div>
+            <h3>Client communication</h3>
+            <p>Respond to inquiries, share business details, and keep new conversations moving with a simple and credible contact path.</p>
+          </article>
+          <article class="card">
+            <div class="card-number">02</div>
+            <h3>Service coordination</h3>
+            <p>Present your offers in a structured way so customers understand what they can request, how your workflow is organized, and what to expect next.</p>
+          </article>
+          <article class="card">
+            <div class="card-number">03</div>
+            <h3>Commercial clarity</h3>
+            <p>Show prices in a direct format that reduces friction, builds confidence, and helps serious inquiries arrive with stronger intent.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container spotlight">
+        <div>
+          <div class="eyebrow">Why this direction</div>
+          <h2>A refined structure that keeps decisions easy.</h2>
+          <p>The layout uses a measured rhythm, warm neutral surfaces, and focused calls to action. That gives the site a modern business presence without feeling overly flashy or generic.</p>
+        </div>
+        <ul class="checklist" aria-label="Website strengths">
+          <li>Homepage with a clear offer, trust-building sections, and visible contact information.</li>
+          <li>Dedicated privacy page for compliance and customer assurance.</li>
+          <li>Pricing section that can support standard plans and custom requests.</li>
+          <li>Responsive design with light and dark modes for a polished client experience.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="pricing">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Pricing</div>
+          <h2>Simple plans for different levels of business demand.</h2>
+          <p>You asked for pricing on the website, so this section includes ready-to-use tiers. The values can be updated later, while the structure already supports transparent presentation.</p>
+        </div>
+        <div class="pricing-grid">
+          <article class="price-card">
+            <h3>Starter</h3>
+            <div class="price-tag">$199 <span>one-time</span></div>
+            <p>For businesses that need a clean web presence with essential company details.</p>
+            <ul class="price-features">
+              <li>Homepage setup</li>
+              <li>Privacy page included</li>
+              <li>Contact and address section</li>
+              <li>Basic content updates</li>
+            </ul>
+          </article>
+          <article class="price-card featured">
+            <h3>Growth</h3>
+            <div class="price-tag">$399 <span>one-time</span></div>
+            <p>For a stronger business presentation with refined structure and more conversion focus.</p>
+            <ul class="price-features">
+              <li>Enhanced section design</li>
+              <li>Expanded pricing presentation</li>
+              <li>Priority revision support</li>
+              <li>Mobile-first optimization</li>
+            </ul>
+          </article>
+          <article class="price-card">
+            <h3>Custom</h3>
+            <div class="price-tag">Quote <span>on request</span></div>
+            <p>For tailored business needs, additional pages, or custom service workflows.</p>
+            <ul class="price-features">
+              <li>Custom content planning</li>
+              <li>Additional service sections</li>
+              <li>Brand-specific adjustments</li>
+              <li>Direct consultation</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container contact-grid">
+        <div class="section-head" style="margin-bottom:0;">
+          <div class="eyebrow">Contact</div>
+          <h2>Reach TONG ZONG directly.</h2>
+          <p>This section includes the exact business details you provided so visitors can contact you without extra steps.</p>
+        </div>
+        <div class="contact-card">
+          <h3>TONG ZONG</h3>
+          <p>12704 22ND AVE<br>COLLEGE POINT NY 11356</p>
+          <p><a href="tel:+19294024302">+1 929 402 4302</a></p>
+          <p>Business hours can be customized later if you want to add them to the site.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> TONG ZONG. All rights reserved.</p>
+      <p><a href="./privacy.html">Privacy Policy</a></p>
+    </div>
+  </footer>
+
+  <script>
+    (function() {
+      const root = document.documentElement;
+      const toggle = document.querySelector('[data-theme-toggle]');
+      let theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      root.setAttribute('data-theme', theme);
+
+      const updateIcon = () => {
+        toggle.innerHTML = theme === 'dark'
+          ? '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="5"></circle><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path></svg>'
+          : '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>';
+        toggle.setAttribute('aria-label', theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+      };
+
+      updateIcon();
+      toggle.addEventListener('click', function() {
+        theme = theme === 'dark' ? 'light' : 'dark';
+        root.setAttribute('data-theme', theme);
+        updateIcon();
+      });
+
+      document.getElementById('year').textContent = new Date().getFullYear();
+    })();
+  </script>
+</body>
+</html>
